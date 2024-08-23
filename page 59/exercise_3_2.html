@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+    <script>
+        //Create an empty array to use as a shopping list
+let shoppingList = [];
+
+//Add Milk, Bread, and Apples to your list
+shoppingList.push("Milk", "Bread", "Apples");
+
+//Update "Bread" with Bananas and Eggs
+shoppingList.splice(shoppingList.indexOf("Bread"), 1, "Bananas", "Eggs");
+
+//Remove the last item from the array and output it into the console
+let removedItem = shoppingList.pop(); // Removes the last item
+console.log("Removed item:", removedItem);
+
+//Sort the list alphabetically
+shoppingList.sort();
+
+//Find and output the index value of Milk
+let indexOfMilk = shoppingList.indexOf("Milk");
+console.log("Index of Milk:", indexOfMilk);
+
+//After Bananas, add Carrots and Lettuce
+let indexOfBananas = shoppingList.indexOf("Bananas");
+shoppingList.splice(indexOfBananas + 1, 0, "Carrots", "Lettuce");
+
+//Create a new list containing Juice and Pop
+let newList = ["Juice", "Pop"];
+
+//Combine both lists, adding the new list twice to the end of the first list
+shoppingList = shoppingList.concat(newList, newList);
+
+//Get the last index value of Pop and output it to the console
+let lastIndexOfPop = shoppingList.lastIndexOf("Pop");
+console.log("Last index of Pop:", lastIndexOfPop);
+
+// Final output: Your final list
+console.log("Final shopping list:", shoppingList);
+    </script>
+</body>
+</html>
