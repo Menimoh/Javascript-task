@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 63</title>
+</head>
+<body>
+    <script>
+        const myCar = {
+            Make: "Toyota",
+            model: "Corolla",
+            year: 2024,
+            color: "black",
+            isNew: true,
+            fuelType: "petro"  
+        }
+        //create a variable that can hold the string value color
+        let colorproperty = 'color'
+        //use the variable to reference the property name within mycar Object
+        //and assign a new value to the color property
+        myCar[colorproperty] = 'black';
+        // use the same variable to assign a new property string value
+        // and use the bracket notation to indicate whether the car is available for purchase
+        myCar['forSale'] = 'false';
+        //output make and model into the console
+        console.log(myCar.Make);
+        console.log(myCar.model);
+        //output the value of the forsale property into the console
+        console.log(myCar['forSale']);
+    </script>
+</body>
+</html>
