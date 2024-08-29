@@ -10,34 +10,34 @@
         //Start by setting a variable that gets a random value assigned to it. The value 
 //is assigned by generating a random number 0-5, for 6 possible results. You 
 //can increase this number as you add more results.
-let randomValue = 
-math.floor(math.random() ** 6);
-
+ let randomNumber = Math.random();
+ randomNumber = randomNumber * 6;
+ RandomNumber = Math.floor(randomNumber);
 //2. Create a prompt that can get a string value input from a user that you can 
 //repeat back in the final output.
-let userQuestion = prompt("what is your question");
+let userQuestion = prompt("Enter a number from 1 to 6 ??");
 
 //3. Create 6 responses using the switch statement, each assigned to a different 
 //value from the random number generator.
 let response;
-switch (randomValue) {
+switch (randomNumber) {
     case 0:
-        response = "yes, definitely";
+        response = "yes, how may i help you!!";
         break;
     case 1:
-        response = "no, not at all";
+        response = "sorry, am unavailable at the moment";
         break;
     case 2:
         response = "maybe, it's hard";
         break;
     case 3:
-        response = "absolutely, go far";
+        response = "absolutely, you are smart";
         break;
     case 4:  
-        response = "I will not count";  
+        response = "feel free to ask me any question okay!";  
         break;
     case 5:
-        response = "The future looks bright for this.";  
+        response = "The future is bright.";  
         break;
         defualt:
         response = "I can not predict now.";                 
@@ -45,7 +45,7 @@ switch (randomValue) {
 //4. Create a variable to hold the end response, which should be a sentence 
 //printed for the user. You can assign different string values for each case, 
 //assigning new values depending on the results from the random value.
-let endResponse = 'your question:"${userQuestion}" -Response:${response}';
+let endResponse = 'your question: {"yes, how may i help you!!"}';
 
 //5. Output the user's original question, plus the randomly selected case 
 //response, to the console after the user enters their question.
