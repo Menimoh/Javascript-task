@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating a number game</title>
+</head>
+<body>
+    <script>
+        //Ask the user to enter a number and check whether it's greater than, equal to, or less 
+   //than a dynamic number value in your code. Output the result to the user.
+   const dynamicNumber = 10;
+   const userInput = prompt("please enter a number");
+   const userNumber = parseFloat(userInput)
+   //Check if the input is a valid number
+if (!isNaN(userNumber)) {
+    // Compare the user's number with the dynamic number
+    if (userNumber > dynamicNumber) {
+        console.log("The number you entered is greater than " + dynamicNumber);
+    } else if (userNumber < dynamicNumber) {
+        console.log("The number you entered is less than " + dynamicNumber);
+    } else {
+        console.log("The number you entered is equal to " + dynamicNumber);
+    }
+} else {
+    console.log("Please enter a valid number.");
+}
+
+    </script>
+</body>
+</html>
